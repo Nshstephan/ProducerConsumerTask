@@ -17,7 +17,7 @@ Producer X writes random value Z[1-100] to the buffer.
    Consumer Y reads value Z from the buffer.     
 ![img_6.png](photosForReadMe/img_6.png)
    
-4. After user pres command/control + C producer thread(s) will stop producing and when last element will be consumed by consumer thread, program will terminate.
+4. After user presses command/control + C producer thread(s) will stop producing and when last element will be consumed by consumer thread, program will terminate.
 ![img_8.png](photosForReadMe/img_8.png)
    
 ![img_9.png](photosForReadMe/img_9.png)
