@@ -21,6 +21,7 @@ Producer X writes random value Z[1-100] to the buffer.
 ![img_8.png](photosForReadMe/img_8.png)
    
 ![img_9.png](photosForReadMe/img_9.png)
+
 5. data.txt file will appear in the same directory as filename.jar
 ![img.png](photosForReadMe/img_10.png)
 
