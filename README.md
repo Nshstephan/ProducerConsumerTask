@@ -2,7 +2,7 @@
 
 #How to use
 
-1. Create a JAR file.   
+1. Create a JAR file.
    ![img.png](photosForReadMe/img.png)
    ![img_1.png](photosForReadMe/img_1.png)
    ![img_2.png](photosForReadMe/img_2.png)
@@ -18,11 +18,8 @@ Producer X writes random value Z[1-100] to the buffer.
 ![img_6.png](photosForReadMe/img_6.png)
    
 4. After user presses command/control + C producer thread(s) will stop producing and when last element will be consumed by consumer thread, program will terminate.
-![img_8.png](photosForReadMe/img_8.png)
-   
-![img_9.png](photosForReadMe/img_9.png)
+   ![img_8.png](photosForReadMe/img_11.png)
+   ![img_9.png](photosForReadMe/img_9.png)
 
 5. data.txt file will appear in the same directory as filename.jar
-![img.png](photosForReadMe/img_10.png)
-
-  
+   ![img.png](photosForReadMe/img_10.png)
