@@ -21,7 +21,8 @@ public class Consumer implements Runnable {
         while (true) {
             try {
                 Thread.sleep(generator.nextInt(100));
-                consumedValue = sharedLocation.blockingGet(id);
+                consumedValue = sharedLocation.blockingGet();
+                System.out.printf("%s%d%s %2d%n", "Consumer ", id, " reads ", consumedValue);
                 Writer.writeToFile(consumedValue);
             } catch (InterruptedException exception) {
                 Thread.currentThread().interrupt();

@@ -22,7 +22,7 @@ public class Producer implements Runnable {
     public void run() {
 
         boolean needWait = false;
-        int size;
+        int size, value;
 
         while (isRunning) {
 
@@ -47,7 +47,10 @@ public class Producer implements Runnable {
             }
 
             try {
-                sharedLocation.blockingPut((generator.nextInt(99) + 1), id);
+                value = generator.nextInt(99) + 1;
+                System.out.printf("%s%d%s%2d\t%s%d%n", "Producer ", id,
+                        " writes ", value, "Buffer cells occupied: ", size);
+                sharedLocation.blockingPut(value);
             } catch (InterruptedException exception) {
                 Thread.currentThread().interrupt();
             }
