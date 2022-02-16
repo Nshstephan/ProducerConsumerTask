@@ -12,7 +12,7 @@ public class BlockingBuffer implements Buffer {
         this.buffer = new LinkedBlockingQueue<>();
     }
 
-    public synchronized int getQueueSize() {
+    public int getQueueSize() {
         return buffer.size();
     }
 
